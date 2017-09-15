@@ -5,22 +5,22 @@ $(function() {
     var sideB = parseInt($("input#side-b").val());
     var sideC = parseInt($("input#side-c").val());
 
-        if (sideA, sideB, sideC) {
-        if (sideA >= sideB + sideC || sideB >= sideC + sideA || sideC >= sideB + sideA) {
-          $("#none").show();
+        if (sideA > 0 && sideB > 0 && sideC > 0) {
+          if (sideA >= sideB + sideC || sideB >= sideC + sideA || sideC >= sideB + sideA) {
+            $("#none").show();
 
-        }
-        else if (sideA === sideB && sideB === sideC && sideC === sideA) {
-          $("#tri-Equi").show();
+          }
+          else if (sideA === sideB && sideB === sideC && sideC === sideA) {
+            $("#tri-Equi").show();
 
-        }
-        else if (sideA === sideB || sideB === sideC || sideC === sideA) {
-          $("#tri-Iso").show();
+          }
+          else if (sideA === sideB || sideB === sideC || sideC === sideA) {
+            $("#tri-Iso").show();
 
-        }
-        else if (sideA != sideB && sideB != sideC && sideC != sideA) {
-          $("#tri-Scal").show();
-        }
+          }
+          else if (sideA != sideB && sideB != sideC && sideC != sideA) {
+            $("#tri-Scal").show();
+          }
       }
         else {
           alert("Enter valid values");
