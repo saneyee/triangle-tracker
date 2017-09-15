@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link href="css/styles.css" rel="stylesheet" type="text/css">
+     <script src="https://code.jquery.com/jquery-3.2.1.js"
+     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+     crossorigin="anonymous"></script>
+     <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Triangle</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Triangle Tracker</h1>
+      </div>
+      <form id="formone">
+        <div class="form-group">
+          <label for="side-a">Enter Side A:</label>
+          <input id="side-a" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="side-b">Enter Side B:</label>
+          <input id="side-b" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="side-c">Enter Side C:</label>
+          <input id="side-c" class="form-control" type="text">
+        </div>
+        <button type="submit" name="button">Check for a triangle</button>
+      </form>
+      <div id="output">
+        <div id="tri-Equi">
+          <h2>Here is a Equilateral Triangle</h2>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Green_equilateral_triangle_point_up.svg/1182px-Green_equilateral_triangle_point_up.svg.png" height="400" width="400" alt="equilateral triangle pic">
+        </div>
+        <div id="tri-Iso">
+          <h2>Here is a Isosceles Triangle</h2>
+          <img src="http://d2r5da613aq50s.cloudfront.net/wp-content/uploads/220436.image1.jpg" height="400" width="600" alt="isosceles triangle pic">
+        </div>
+        <div id="tri-Scal">
+          <h2>Here is a Scalene Triangle</h2>
+          <img src="https://i.ytimg.com/vi/Pv854t5QUVs/maxresdefault.jpg" height="400" width="400" alt="scalene triangle pic">
+        </div>
+        <div id="none">
+          <h2>Not a triangle!!!!!</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
